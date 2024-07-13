@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjusted padding for better spacing */
+    background-color: #ffffff; /* Off-white color */
+}
+
+.logo {
+    width: 100px; /* Fixed size for logo */
+    height: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.login-button {
+    padding: 10px 20px;
+    background-color: #f5f5f5; /* Off-white color */
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically on mobile */
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Reduced padding for mobile */
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    max-width: 100%; /* Full width on mobile */
+    text-align: center; /* Center text on mobile */
+}
+
+h1 {
+    font-size: 36px; /* Adjusted for desktop */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px; /* Adjusted for desktop */
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px; /* Adjusted for desktop */
+    background-color: #f5f5f5; /* Off-white color */
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px; /* Adjusted for desktop */
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.login-link {
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #f5f5f5; /* Off-white color */
+    text-decoration: none;
+}
+
+.image {
+    width: 100%; /* Full width on mobile */
+    margin: 0;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* New styles for the plans section */
+.plans {
+    background-color: #ffffff; /* White background */
+    padding: 20px; /* Adjusted padding for mobile */
+}
+
+.plans-content {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically on mobile */
+    justify-content: center;
+    align-items: center;
+}
+
+.plans-image {
+    width: 100%; /* Full width on mobile */
+    margin-bottom: 20px;
+}
+
+.plans-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.plans-details {
+    width: 100%; /* Full width on mobile */
+    color: #1c1c1c; /* Dark text color */
+    text-align: center; /* Center text on mobile */
+}
+
+.plans-details h2 {
+    font-size: 30px; /* Adjusted for desktop */
+    margin-bottom: 20px;
+}
+
+.plans-details ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.plans-details ul li {
+    font-size: 18px; /* Adjusted for desktop */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center items on mobile */
+}
+
+.plans-details ul li::before {
+    content: '✓';
+    margin-right: 10px;
+    color: #1c1c1c; /* Dark text color */
+}
+
+.plan-options {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%; /* Full width on mobile */
+}
+
+.plan-option {
+    background-color: #f4f4f4;
+    padding: 10px; /* Adjusted for mobile */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.plan-option:hover {
+    background-color: #e0e0e0;
+}
+
+.plan-option input {
+    display: none;
+}
+
+.plan-option .plan-name {
+    font-size: 16px; /* Adjusted for mobile */
+}
+
+.plan-option .plan-price {
+    font-size: 16px; /* Adjusted for mobile */
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+    .main-content {
+        flex-direction: row; /* Row layout on tablets and larger screens */
+        padding: 50px;
+    }
+
+    .content {
+        max-width: 50%;
+        text-align: left; /* Align text to the left */
+    }
+
+    .image {
+        max-width: 50%;
+    }
+
+    .plans-content {
+        flex-direction: row; /* Row layout on tablets and larger screens */
+    }
+
+    .plans-image {
+        max-width: 50%;
+        margin-bottom: 0;
+    }
+
+    .plans-details {
+        max-width: 50%;
+        text-align: left; /* Align text to the left */
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo {
+        width: 80px; /* Further reduced size for larger screens */
+    }
+
+    header {
+        padding: 10px 50px; /* More space for larger screens */
+    }
+}
